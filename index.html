@@ -1,28 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>JavaScript Calculator</title>
-    </head>
-    <body>
-        <div id="calculator">
-            <div id="display">0</div>
-            <button class="numButton">1</button>
-            <button class="numButton">2</button>
-            <button class="numButton">3</button>
-            <button class="opButton">+</button>
-            <button class="numButton">4</button>
-            <button class="numButton">5</button>
-            <button class="numButton">6</button>
-            <button class="opButton">-</button>
-            <button class="numButton">7</button>
-            <button class="numButton">8</button>
-            <button class="numButton">9</button>
-            <button class="opButton">*</button>
-            <button class="numButton">0</button>
-            <button class="opButton">/</button>
-            <button class="equalButton">=</button>
-            <button class="clearButton">C</button>
-            
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="calapp.css" />
+    <title>JavaScript Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input type="text" id="inputBox" placeholder="0" />
+        <div>
+          <button class="button clr">AC</button>
+          <button class="button del">DEL</button>
+          <button class="button operator">%</button>
+          <button class="button operator">/</button>
         </div>
-    </body>
+        <div>
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button operator">*</button>
+        </div>
+        <div>
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button operator">-</button>
+        </div>
+        <div>
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button operator">+</button>
+        </div>
+
+        <div>
+          <button class="button">00</button>
+          <button class="button">0</button>
+          <button class="button">.</button>
+          <button class="button equalBtn">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="calapp.js"></script>
+  </body>
 </html>
